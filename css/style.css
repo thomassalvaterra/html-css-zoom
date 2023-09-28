@@ -15,10 +15,19 @@ header{
 
 main{
     background-color: black;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 70px - 100px);
     overflow-y: auto;
     padding: 20px;
     
+}
+
+footer{
+    background-color: rgb(53, 52, 52);
+    width: 100%;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
 }
 
 .setting{
@@ -42,8 +51,53 @@ main{
     height: auto;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
 }
 
-.image{
-    background-size: cover;
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.foot-item{
+    margin: 5px;
+    padding: 5px;
+}
+
+.mic{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.card{
+    width: calc(100% / 7);
+    height: calc(100% / 5);
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.card-image{
+    position: relative;
+    width: 207px;
+    margin: 5px;
+}
+
+.badges{
+    position: absolute;
+    left: 5px;
+    bottom: 9px;
+}
+
+.badge{
+    background-color: gray;
+    color: white;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.card-image > img{
+    width: 60%;
+}
+
