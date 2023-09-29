@@ -4,6 +4,8 @@
     padding: 0;
 }
 
+/** STRUTTURA PAGINA **/
+
 header{
     width: 100%;
     height: 70px;
@@ -30,21 +32,7 @@ footer{
     justify-content: space-between;
 }
 
-.setting{
-    background-color: gray;
-    border-radius: 10px;
-    padding: 5px;
-    margin: 10px;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.icon{
-    background-color: gray;
-    border-radius: 10px;
-    padding: 5px;
-    margin: 10px;
-}
+/** CONTAINER **/
 
 .main-container{
     width: 80%;
@@ -54,10 +42,38 @@ footer{
     flex-wrap: wrap;
 }
 
-.footer-container{
+.footer-left, .footer-center, .footer-right{
+    flex-shrink: 0;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer-right{
+    background-color: darkgrey;
+    color: red;
+}
+
+/** ELEMENTI PAGINA **/
+
+.setting{
+    background-color: gray;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer .icon{
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
 }
 
 .foot-item{
@@ -66,16 +82,11 @@ footer{
 }
 
 .mic{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 10px;
+    
 }
 
 .card{
     width: calc(100% / 7);
-    height: calc(100% / 5);
-    padding-top: 10px;
-    padding-right: 10px;
 }
 
 .card-image{
@@ -94,6 +105,25 @@ footer{
     color: white;
     padding: 5px;
     margin-bottom: 5px;
+}
+
+.icon-header{
+    background-color: gray;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.fa, .fas{
+    font-weight: 900;
+}
+
+.fa-2x{
+    font-weight: 2em;
+}
+
+.end{
+    padding: 10px;
 }
 
 
