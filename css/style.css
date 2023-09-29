@@ -80,7 +80,6 @@ footer{
 
 .card-image{
     position: relative;
-    width: 207px;
     margin: 5px;
 }
 
@@ -97,7 +96,4 @@ footer{
     margin-bottom: 5px;
 }
 
-.card-image > img{
-    width: 60%;
-}
 
